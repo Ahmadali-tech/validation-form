@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation form</title>
+    <link rel="Stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="form">
+        <div class="formvalidation">
+            <div class="firstname">
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" placeholder="Enter the firstname">
+            </div>
+            <div class="lastname">
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" placeholder="Enter the lastname">
+            </div>
+            <div class="middlename">
+                <label for="middlename">Middlename</label>
+                <input type="text" id="middlename" placeholder="Enter the middlename">
+            </div>
+            <div class="date">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="dateOfBirth">
+            </div>
+            <div class="address">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Enter the valid address">
+            </div>
+            <div class="Email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="countrycode">
+                <label for="countryCode">Country Code</label>
+                <select name="countryCode" id="countryCode">
+                    <option data="GB" value="44" selected>+92</option>
+                </select>
+            </div>
+            <div class="employeeID">
+                <label for="employeeID">Employee ID</label>
+                <input type="text" id="employeeID" placeholder="Enter the employee ID">
+            </div>
+            <div class="depID">
+                <label for="depID">Department ID</label>
+                <select name="depID" id="depID">
+                    <option value="HR">HR</option>
+                    <option value="Teach">Teach</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option> 
+                </select>
+            </div>
+            <div class="jobTitle">
+                <label for="jobTitle">Job Title</label>
+                <input type="text" id="jobTitle" placeholder="Enter the job title description">
+            </div>
+            <div class="managerName">
+                <label for="managerName">Manager's Name</label>
+                <input type="text" id="managerName" placeholder="Enter the manager's name">
+            </div>
+            <div class="time">
+                <label for="time">Select a time:</label>
+                <input type="time" id="time" name="appointmentTime">
+            </div>
+            <div class="baseSalary">
+                <label for="baseSalary">Base Salary</label>
+                <input type="number" id="baseSalary" placeholder="Enter your salary">
+            </div>
+            <div class="bonus">
+                <label for="bonus">Bonus</label>
+                <input type="number" id="bonus" placeholder="Enter bonus number">
+            </div>
+            <div class="tax">
+                <label for="tax">Tax</label>
+                <input type="number" id="tax" placeholder="Enter tax amount">
+            </div>
+            <div class="netSalary">
+                <label for="netSalary">Net Salary</label>
+                <input type="text" id="netSalary" placeholder="Calculated Net Salary" readonly>
+            </div>
+            <button type="button" id="calculateButton">Calculate Net Salary</button>
+            <div class="Button">
+            <button type="button" id="FormedSubmiited">FormedSubmiited</button>
+        </div>
+            <script src="script.js"></script>
+        </div>
+    </div>
+    
+</body>
+</html>
